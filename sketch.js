@@ -2,7 +2,6 @@ var jack,jack2;
 var platform,platform2;
 var jack_image, platform_image;
 var platform1,platform2,platform3,platform4,platform5,platform6;
-var score = 0;
 
 function preload(){
   jack_image=loadImage("images/jack2.png")
@@ -31,14 +30,7 @@ function setup() {
 
 function draw() {
   background('#F2F5B6');
-
-  //calculate and display score
-    score = Math.round(frameCount/10);
-
-  // printing score
-    textSize(20);
-    fill(0);
-    text("Score " + score , 350,50);
+     
   
   if(keyDown("up"))
   {
